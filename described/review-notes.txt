@@ -1,0 +1,61 @@
+Starting a Community Book Club: extended audio description demo
+Prepared 2026-10-08
+
+Separate demo path: /movement-audio-demo/described/
+The existing root index.html is preserved.
+Video: XLwuiS0b, Teaching Channel library detail 164401.
+Original stream: https://teachingchannel-videos.s3.us-west-2.amazonaws.com/XLwuiS0b/XLwuiS0b.m3u8
+Source captions: https://teachingchannel-videos.s3.us-west-2.amazonaws.com/vtt-tracks/XLwuiS0b.vtt
+
+Description preparation
+19 new cues were drafted from source-video frames sampled every two seconds,
+with larger frames inspected for on-screen documents, and compared with the
+library's existing dialogue captions. These replace the five placeholder cues.
+They focus on information not conveyed by narration: titles, sample flyers,
+worksheet structure, sample questions, and classroom arrangements.
+Sample documents are summarized rather than transcribed in full.
+This is a draft for review; no human accessibility or blind-user review has
+been performed. Frame sampling and source captions do not substitute for
+reviewing every visual transition against the complete soundtrack.
+
+Playback
+The video pauses at each original-timeline cue while browser speech reads it.
+The video resumes only after the speech completion callback. Speech errors
+leave it paused with Retry and Skip controls. Seeking cancels active speech
+and resets the cue position; backward seeks replay subsequent descriptions.
+Description text is not announced in a live region, to avoid double speech.
+The video's volume and mute setting also apply to description speech.
+Speech uses a local English voice where available, otherwise an English or
+browser-default voice. Availability and voice quality vary by browser/device.
+The VTT file is an export; player.js implements extended pause timing.
+
+Validation performed
+Chrome on Windows: real S3 HLS playback; captions loaded; a real Windows speech
+voice completed the first description and playback resumed. Deterministic
+speech tests covered pause/restart, stale callbacks, backward seeking,
+seeking during narration, speech errors/retry, toggle-off and preference
+persistence. Keyboard tabs and mobile layouts were checked.
+Other browser engines and assistive technologies still require review.
+
+WCAG assessment
+Target: SC 1.2.3 (A), 1.2.5 (AA), and 1.2.7 (AAA), for this video's media.
+W3C lists extended audio description technique G8 as sufficient for 1.2.5.
+This implementation is not a verified conformance declaration for those
+criteria, the entire page, or the Teaching Channel video library.
+Before declaring support, review description completeness and accuracy against
+the full video/soundtrack, timing and relevance of document summaries, and
+playback with supported browsers and assistive technologies.
+
+The existing caption file contains transcription and timing errors. It is
+included unchanged and labeled as source captions. The visual-description
+script plus those captions is not claimed as a verified full text alternative.
+SC 1.2.3 is targeted through the audio-description route.
+
+References
+https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded.html
+https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded.html
+https://www.w3.org/WAI/WCAG21/Understanding/extended-audio-description-prerecorded.html
+
+Third-party dependency
+hls.js 1.6.13; license in hls-LICENSE.txt.
+Embedded page styling and imagery are retained from the original public demo.
