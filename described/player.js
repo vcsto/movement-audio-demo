@@ -118,7 +118,7 @@
   }
   function setEnabled(on) {
     if (on && !supported) {
-      message('This browser cannot speak audio descriptions. Open the visual description script below or use a browser with speech synthesis.', true);
+      message('This browser cannot speak audio descriptions. Download the audio description script from the Transcript tab or use a browser with speech synthesis.', true);
       return;
     }
     enabled = on;
