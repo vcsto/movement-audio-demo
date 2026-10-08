@@ -237,7 +237,7 @@
     } else message('This is a standalone demo. Open the Teaching Channel library to use account features.');
   }));
   window.addEventListener('pagehide', cancelSpeech);
-  selectTab(tabs[0]);
+  selectTab(document.getElementById('tab-transcript'));
   if (!supported) enabled = false;
   render();
 })();
