@@ -1,0 +1,185 @@
+/* Player rules copied without modification from the live site styles. */
+.videoplayer-inner .video-js{
+    width: 100% !important;
+    padding-top: 56.25%;
+    height: 0px !important;
+    position: relative;
+}
+.video-js .vjs-big-play-button{
+    top: 0px !important;
+    right: 0px !important;
+    left: 0px !important;
+    bottom: 0px !important;
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.1);
+    border: 3px solid #FFFFFF;
+    backdrop-filter: blur(8px);
+    border-radius: 48px;
+}
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before, .video-js .vjs-play-control .vjs-icon-placeholder:before, .vjs-icon-play:before{
+        font-size: xxx-large;
+        top: 15px;
+    }
+.vjs-skip-button svg{
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
+.video-js .vjs-control-bar{
+    height: 3.5em !important;
+}
+.video-js .vjs-time-control{
+    line-height: 3.5em !important;
+}
+.vjs-button > .vjs-icon-placeholder:before{
+    line-height: 2.00 !important;
+}
+.video-js .vjs-volume-bar{
+    margin-top: 1.6em !important;
+}
+.vjs-mouse-display{
+    margin-top: 6px;
+}
+.vjs-playback-rate{
+    top: 2px;
+    font-size: 10px;
+}
+.videoplayer-inner .video-js{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.video-js *, .video-js :after, .video-js :before{
+    box-sizing: inherit;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+.video-player-inner-w .videoplayer-inner .vjs-control-text, .vjs-time-tooltip, .video-player-inner-w .videoplayer-inner .vjs-remaining-time.vjs-time-control.vjs-control span, .video-player-inner-w .videoplayer-inner .vjs-seek-to-live-text, .video-player-inner-w .videoplayer-inner .vjs-remaining-time-display, .video-player-inner-w .videoplayer-inner .vjs-current-time-display, .video-player-inner-w .videoplayer-inner .vjs-control-text, .video-player-inner-w .videoplayer-inner .vjs-time-control.vjs-time-divider, .video-player-inner-w .videoplayer-inner .vjs-duration-display{
+    font-size: 14px;
+}
+.video-player-inner-w .videoplayer-inner .vjs-live-display span.vjs-control-text{
+    font-size: 16px;
+}
+.video-player-inner-w .videoplayer-inner .vjs-play-progress.vjs-slider-bar{
+    font-size: 18px;
+}
+.video-player-inner-w .videoplayer-inner .vjs-control-text{
+    font-size: 16px;
+}
+.video-player-inner-w .videoplayer-inner .vjs-live-display{
+    font-size: 19px;
+}
+.video-message-modal .video-js{
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 96% !important;
+    height: 63% !important;
+}
+.video-message-modal .vjs-text-track-display{
+    z-index: 12;
+    pointer-events: none;
+}
+.video-message-modal .vjs-text-track,
+.video-message-modal .vjs-text-track-cue,
+.video-message-modal .vjs-text-track-cue div{
+    color: #fff !important;
+    text-shadow: 0 0 4px #000, 0 0 2px #000 !important;
+    font-size: 1.25em !important;
+}
+.video-message-modal .vjs-text-track-display > div{
+    max-width: 95%;
+    margin: 0 auto;
+}
+.video-message-modal .vjs-menu-item.vjs-texttrack-settings{
+    display: none !important;
+}
+.video-message-modal .video-js .vjs-text-track-settings.vjs-modal-dialog{
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    background-color: rgba(43, 51, 63, 0.95) !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    z-index: 10 !important;
+}
+.video-message-modal .vjs-text-track-settings .vjs-modal-dialog-content{
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+    padding: 16px 20px 12px !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+.video-message-modal .vjs-text-track-settings .vjs-track-settings-colors,
+.video-message-modal .vjs-text-track-settings .vjs-track-settings-font,
+.video-message-modal .vjs-text-track-settings .vjs-track-settings-controls{
+    display: block !important;
+    width: 100% !important;
+}
+.video-message-modal .vjs-text-track-settings .vjs-track-settings-controls{
+    text-align: right !important;
+    padding-top: 8px !important;
+}
+.video-message-modal .vjs-text-track-settings fieldset{
+    display: block !important;
+    margin: 0 0 10px 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    width: 100% !important;
+}
+.video-message-modal .vjs-text-track-settings fieldset span{
+        display: block !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+.video-message-modal .vjs-text-track-settings fieldset span > select{
+            display: block !important;
+            width: 100% !important;
+            max-width: 100% !important;
+            margin: 6px 0 0 0 !important;
+        }
+.video-message-modal .vjs-text-track-settings legend{
+    position: static !important;
+    clip: auto !important;
+    width: auto !important;
+    height: auto !important;
+    overflow: visible !important;
+    color: #fff !important;
+    font-size: 1.1em !important;
+    margin: 0 0 6px 0 !important;
+}
+.video-message-modal .vjs-play-control .vjs-icon-placeholder:before{
+    font-size: 1.8em !important;
+    top: 0 !important;
+}
+.video-message-modal .video-js .vjs-control-bar{
+    display: flex !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    transform: none !important;
+}
+.video-message-modal .video-js .vjs-big-play-button{
+    display: none !important;
+}
+.videoObservation-hd.videoplayer-inner .video-js .vjs-play-control .vjs-icon-placeholder:before{
+    font-size: 21px !important;
+    top: -2px !important;
+    left: 0px;
+}
+.videoplayer-main-section .video-js .vjs-play-control .vjs-icon-placeholder:before{
+    font-size: 24px;
+    top: -5px;
+}
+.video-js .vjs-control{
+    color:#fff;
+}
