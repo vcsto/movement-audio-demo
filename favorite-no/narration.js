@@ -175,7 +175,6 @@
     constructor(player) {
       super(player, {label: 'Audio description', selectable: true, multiSelectable: true, selected: enabled});
       this.addClass('vjs-audio-description-item');
-      this.el().setAttribute('aria-label', 'Audio description');
       const sync = () => {
         this.selected(enabled);
         this.controlText('');
